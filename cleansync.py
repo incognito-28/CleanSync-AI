@@ -7,7 +7,7 @@ import tools
 
 load_dotenv()
 
-AI_MODEL = os.getenv("AI_MODEL", "llama3.2")
+AI_MODEL = os.getenv("AI_MODEL", "gemma3:1b")
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434/v1")
 TARGET_FOLDER_NAME = os.getenv("SCAN_TARGET_DIR", "Downloads")
 TARGET_DIR = Path.home() / TARGET_FOLDER_NAME
